@@ -51,6 +51,7 @@ alias gpush='git push origin'
 alias yd='yt-dlp -f "bestvideo[height<=1080]+bestaudio" --embed-chapters --external-downloader aria2c --concurrent-fragments 4'
 alias vim='nvim'
 alias grep='grep --color=auto'
+alias up='yay -Syu && flatpak update'
 
 # VPN Aliases
 alias vpn-up='sudo tailscale up --exit-node=raspberrypi'
