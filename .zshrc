@@ -49,8 +49,10 @@ alias gpush='git push origin'
 
 # Important Aliases
 alias yd='yt-dlp -f "bestvideo[height<=1080]+bestaudio" --embed-chapters --external-downloader aria2c --concurrent-fragments 4'
+alias td='yt-dlp --external-downloader aria2c -o "%(title)s."'
 alias vim='nvim'
 alias grep='grep --color=auto'
+alias ghistory='cat ~/.zsh_history | fzf'
 alias up='yay -Syu && flatpak update'
 
 # VPN Aliases
@@ -69,11 +71,14 @@ lsfind ()
     ll "$1" | grep "$2"
 }
 
+# Games Aliases
+alias sekiro='bash ~/Games/sekiro/start.e-w.sh'
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 #Display Pokemon
-pokemon-colorscripts --no-title -r 1,3,6
+# pokemon-colorscripts --no-title -r 1,3,6
 
 # Zoxide
 eval "$(zoxide init --cmd cd zsh)"
@@ -81,5 +86,8 @@ eval "$(zoxide init --cmd cd zsh)"
 # NVM
 # source /usr/share/nvm/init-nvm.sh
 
- typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+# Fnm
+eval "$(fnm env --use-on-cd)"
+
+ # typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 

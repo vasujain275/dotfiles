@@ -2,4 +2,22 @@
 --  I promise not to create any merge conflicts in this directory :)
 --
 -- See the kickstart.nvim README for more information
-return {}
+return {
+  {
+    'christoomey/vim-tmux-navigator',
+    lazy = false,
+  },
+  {
+    'rust-lang/rust.vim',
+    ft = 'rust',
+    init = function()
+      vim.g.rustfmt_autosave = 1
+    end,
+  },
+  {
+    'm4xshen/autoclose.nvim',
+  },
+  {
+    'ThePrimeagen/vim-be-good',
+  },
+}
