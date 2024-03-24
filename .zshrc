@@ -71,9 +71,6 @@ lsfind ()
     ll "$1" | grep "$2"
 }
 
-# Games Aliases
-alias sekiro='bash ~/Games/sekiro/start.e-w.sh'
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
@@ -91,3 +88,5 @@ eval "$(fnm env --use-on-cd)"
 
  # typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
+
+eval "$(gh copilot alias -- zsh)"
